@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Alex McGrath">
+
+	<style>
+
+
+		body {
+			width: 100%;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			background-image: url("images/despina.jpg");
+			background-size: cover;
+			background-color: #000;
+		}
+		.body {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			font-family: sans-serif;
+			color: #e5e5e5;
+		}
+		.greeting {
+			width: 100%;
+			z-index: -100;
+			float: right;
+			position: relative;
+			display: inline-block;
+			text-align: right;
+			padding-top: 2%;
+			padding-right: 5%;
+		}
+		.greeting h3{
+			font-size: 220%;
+			line-height: 100%;
+			font-weight: normal;
+			letter-spacing: 8px;
+			font-family: 'Megrim', sans-serif;
+		}
+		.greeting h4{
+			font-size: 140%;
+			line-height: 90%;
+			font-weight: lighter;
+			letter-spacing: 5px;
+			font-family: 'Megrim', sans-serif;
+		}
+		.cat {
+			height: auto;
+			width: 100%;
+			float: left;
+			position: relative;
+			z-index: 100;
+			font-family: 'Lato', sans-serif;
+			letter-spacing: 3px;
+			padding-left: 5%;
+			padding-top: 1%;
+			padding-bottom: 1%;
+		}
+		.cat h4{
+			margin: 0;
+			font-size: 150%;
+			line-height: 90%;
+			font-weight: lighter;
+			letter-spacing: 5px;
+		}
+		#link1 {
+			height: 0;
+			width: 30%;
+			float: left;
+			position: relative;
+			font-size: 115%;
+			z-index: 100;
+			font-family: 'Lato', sans-serif;
+			letter-spacing: 3px;
+			line-height: 130%;
+			padding-left: 2%;
+			padding-top: 1%;
+			padding-bottom: 1%;
+			visibility:hidden;
+		}
+		#link2 {
+			height: 0;
+			width: 100%;
+			float: left;
+			position: relative;
+			font-size: 115%;
+			z-index: 100;
+			font-family: 'Lato', sans-serif;
+			letter-spacing: 3px;
+			line-height: 130%;
+			padding-left: 2%;
+			padding-top: 1%;
+			padding-bottom: 1%;
+			visibility:hidden;
+		}
+		.cat:hover, .cat:active {
+			background-color: rgba(256,256,256, .07);
+			text-decoration: none;
+			color: #eaeaea;
+		}
+
+		a:link, a:visited {
+			text-decoration: none;
+			color: #e5e5e5;
+		}
+		a:hover, a:active {
+			text-decoration: none;
+			color: #eaeaea;
+			font-weight: 700;
+			letter-spacing: 4px;
+		}
+
+		.footer {
+			height: 2%;
+			padding-left: 2%;
+			position:fixed;
+			top: 97%;
+			width: 100%;
+			color: #333;
+			font-family: 'Lato', sans-serif;
+		}
+
+
+	</style>
+	<script>
+	function openMenu1() {
+		var x = document.getElementById("link1").style.visibility;
+		if (x =="hidden"){
+			document.getElementById("link1").style.visibility= "visible";
+			document.getElementById("link1").style.height= "auto";
+		} else {
+			document.getElementById("link1").style.visibility= "hidden";
+			document.getElementById("link1").style.height= "0";
+		}
+	}
+	function openMenu2() {
+		var x = document.getElementById("link2").style.visibility;
+		if (x =="hidden"){
+			document.getElementById("link2").style.visibility= "visible";
+			document.getElementById("link2").style.height= "auto";
+		} else {
+			document.getElementById("link2").style.visibility= "hidden";
+			document.getElementById("link2").style.height= "0";
+		}
+	}
+
+	</script>
+
+	<title>planet 488</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Megrim" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="body" alt="Neptune and it's moon Despina">
+		<div class="greeting"><h3>alex mcgrath</h3><h4>welcome<h4></div>
+<div class="cat" onclick="openMenu1()"><h4>hello</h4>
+	<div id="link1">
+		I am a historian and archivist, current working with the history of astronomy in Boston. I enjoy space, time, and plants.
+	</div>
+</div>
+	<div class="cat" onclick="openMenu2()"><h4>projects</h4>
+		<div id="link2">
+			<a href="">Trouvelot in Boston</a>
+		<br>
+			<a href="http://altbibl.io/gazette/eclipse-expeditions-from-hco-and-sao-out-into-the-world/">Eclipse Expeditions from HCO and SAO</a>
+			<a href="https://news.harvard.edu/gazette/story/2017/08/harvard-photos-of-eclipses-through-the-years/"> (<i>Harvard Gazette</i>)</a>
+		<br>
+			<a href="http://altbibl.io/gazette/the-first-computer-williamina-fleming-and-the-horsehead-nebula/">Williamina Fleming and the Horsehead Nebula</a>
+		<br>
+			<a href="http://www.perkinsarchives.org/3/post/2017/05/my-time-in-the-perkins-archives.html">My Time in the Perkins Archives</a>
+		<br>
+		<a href="http://www.perkinsarchives.org/printed-ephemera.html">Perkins Printed Ephemera Collection Finding Aid</a>
+		<br>
+		<a href="http://www.perkinsarchives.org/blindness-clippings.html">Blindness in Popular Fiction and Nonfiction Clippings Collection Finding Aid</a>
+		<br>
+		<a href="pdfs/gangstasparadise.pdf">Gangsta’s Paradise: Popular Politics and Gang Violence in the Late Roman Republic</a>
+	</div>
+</div>
+		<div class="cat">
+			<a href="mailto:alexmcg1626@gmail.com"><h4><i>contact me</i></h4></a>
+		</div><br>
+
+
+		<!-- Footer -->
+		<div class="footer">
+
+					<!-- WHAT TO DO:
+					KEEP THE BELOW LINE AS IT IS BUT CHANGE IT BY REPLACING
+					"Jane Doe " WITH "Your Name" (but no quotes).
+					-->
+					&copy;2016  Alex McGrath
+
+					Posted on September 12, 2016.
+					Modified on [10/15/2017]
+
+
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

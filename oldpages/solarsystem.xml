@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="xmlstyle.css"?>
+  <solarsystem>
+    <planet>
+      <name>mercury</name>
+      <life>does not support life</life>
+    </planet>
+    <planet>
+      <name>venus</name>
+      <life>does not support life</life>
+    </planet>
+    <planet>
+      <name>earth</name>
+      <life>supports life</life>
+    </planet>
+    <planet>
+      <name>mars</name>
+      <life>does not support life</life>
+    </planet>
+    <planet>
+      <name>jupiter</name>
+      <life>does not support life</life>
+    </planet>
+    <planet>
+      <name>saturn</name>
+      <life>does not support life</life>
+    </planet>
+    <planet>
+      <name>uranus</name>
+      <life>does not support life</life>
+    </planet>
+    <planet>
+      <name>neptune</name>
+      <life>does not support life</life>
+    </planet>
+    <dwarfplanet>
+      <name>pluto</name>
+      <life>supports life</life>
+    </dwarfplanet>
+  </solarsystem>

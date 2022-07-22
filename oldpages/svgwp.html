@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+<style>
+
+#body {
+  width:100%;
+  height:98%;
+  overflow: none;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0;
+}
+#monograph{
+  width:15%;
+  float:left;
+}
+
+#title{
+  width: 81%;
+  position: relative;
+  float: left;
+  padding-left: 2%;
+  padding-top: 5%;
+}
+
+#title h3{
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+  font-size: 250%;
+}
+
+#sidebody {
+  width:15%;
+  height:85%;
+  position:relative;
+  float:left;
+}
+
+#bodytxt{
+  width: 60%;
+  height: 85%;
+  position: relative;
+  float: left;
+  padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 30%;
+  overflow-y: scroll;
+}
+
+#bodytxt h4{
+  color: #4c4c4c;
+  font-family: 'Lato', sans-serif;
+  font-size: 150%;
+}
+
+#bodytxt p{
+  color: #0d0d0d;
+  font-family: 'Lato', sans-serif;
+  font-size: 95%;
+  line-height: 160%;
+	letter-spacing: 1px;
+}
+
+#links{
+  position: relative;
+  padding-left: 4%;
+  color: #111111;
+  font-family: 'Lato', sans-serif;
+  font-size: 95%;
+  line-height: 120%;
+}
+
+a{
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+footer {
+	position: relative;
+	float: left;
+	width: 97%;
+	height: 2%;
+  padding-left: 3%;
+  color: #444444;
+  font-family: 'Lato', sans-serif;
+  font-size: 90%;
+  z-index: -100;
+}
+
+</style>
+
+
+<title>planet 488</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto:400,700" rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+  <div id="monograph">
+    <a href="index.html"><img src="svg/monogram.svg" alt="homepage"></a>
+  </div>
+  <div id="title">
+    <h3>SVGs and Archival Web Development</h3>
+  </div>
+
+  <div id="bodytxt">
+    <h4>what is svg?</h4>
+
+      <p> Scalable Vector Graphics (SVGs) are an encoded sketch. In XML, programmers can plot out 2-d vectors to create shapes, logos, and more complex artworks. Usually, artists create these graphics with programs such as Abode Illustrator, Sketch, or Janvas, where they use familiar techniques and toolboxes. The software does the dirty work, converting their image into a two dimensional vector. <br><br>
+	As xml-based documents, SVG files are agile enough to allow for more dynamic artwork and more complex aesthetic design than traditional formats. The files themselves are small comparitavely. The logo that appears in the upper corner of this page is a geometric monogram I designed in Adobe Illustrator. In its current form, the SVG is 2 KB large. As a PNG, it is 9 KB; and as a JPG, 20 KB. For such a simple design (my first SVG), the size difference is negligible. For the professional artists on the web, the compressed file size encourages complex and dynamic designs that layer and interact. <br><br>
+	Using XML files, artists can also explore opportunities for manipulating the vector codes through various scripts. Both JavaScript and CSS can recall and change SVG values, as well as the native SVG script SMIL (Synchronized Multimedia Integration Language). Using these functions, artists can create <a href="svg/triangleloading.svg">animations</a>, and map whole scenes onto the web page. The text of SVG images can also be input directly into HTML code, allowing for interaction between HTML elements (with CSS styles) and the vector graphics. Such interactivity opens the way for new levels of page dynamism and innovative web artwork. Loading screens, click animations, and creative storytelling are some of the greatest areas on the internet for original and innovative art. <br><br>
+	But artists are not the only community on the internet that find value in SVGs. As client-generated vectors, the have a scalability that allows the images to be responsive and retain crisp resolution even when zoomed-in absurdly close. The small file size, again, help for web users that have slow or limited network connections. With such versatility and agility, SVGs offer an aesthetic potential for any website. </p>
+
+<h4>how can archives use SVG?</h4>
+
+	<p> Archives are important institutions that are only just beginning to establish a web presence. As repositories of historical information, their web pages require accessibility, functionality, and findability above all else. Aesthetics can be an important component of these task’s success. <br><br>
+	Using SVG files, archives can create responsive and schematic web templates that link to various HTML components, maintaining a familiar pattern throughout the website. Under a unified aesthetic, users can better know where to go and expect what to find. With responsive scalability, this can accommodate any size that the user needs. With the ability to link multiple SVG to a single webpage, another design could be optimized for mobile and touch-input devices. These designs could be further manipulated and animated, but in archival web-spaces design should not obfuscate function. <br><br>
+	One area that animation could help archival websites is in loading screens. For archives with audio/visual collections or digital scans of documents, the important information is held behind large data files that can take a significant amount of time to load. With the text of an SVG, along with a few lines of JavaScript-- all of which add only a few KB to the file size--, a loading screen animation can play until the background file is fully loaded. The animated SVG, compared to a GIF, does not add much excess to the already demanding network link.
+</p>
+<h4>what are the downsides?</h4>
+
+	<p> SVGs are a strange technology even to those familiar with HTML. Moreover, any of the supplementary artistic tools, like Adobe Illustrator, are specialized and difficult to pick up and master. Without prior experience, it can take a great deal of time to learn the ropes of these platforms. And after you’ve cleared the sharp learning curve, you need to familiarize yourself with new JavaScript libraries, SMIL syntaxes, and many other coding components in order to step up to dynamic animations. <br><br>
+	For all the aesthetic benefit, designing and implementing SVGs adds a new element to web design workflow. More than any CSS design team can handle, and too specialized to be distributed between multiple teams, SVGs require a new worker with an affinity for vector manipulation, and an appealing aesthetic as well. With such requirements, SVGs might be expensive to implement. <br><br>
+	While SVGs are now almost universally acceptable on any browser, their animation effects can be limited. Earlier versions of Internet Explorer do not support SMIL, among other things. JavaScript functions are often necessary for interactivity, and thus might not work on some platforms or for user who have JavaScript disabled. Such limitations restrict the potential for innovative SVGs among users of older technologies; but as new technology is developed, the support and capabilities of SVG increase. <p>
+
+<h4>getting started</h4>
+  <p> SVGs are a crisp, clean, and responsive alternative to traditional image files, and they demonstrate a remarkable ability for manipulation and scripting by experienced artists and programers. The archival community could greatly benefit from the aesthetic ease and coherence that comes from SVG based designs.
+		<br><br>
+		Below are some links that I found helpful while exploring the basics and potentials of SVGs:
+  <div id="links">
+  create an SVG at <a href="http://www.janvas.com/site/home_en.php">Janvas.com</a>
+    <br><br>
+  <a href="https://svgontheweb.com/"> SVG on the Web</a> an encyclopedia of SVG concepts and tools (Jake Glitsoff)
+  <br><br>
+  <a href="http://www.webdesignerdepot.com/2015/01/the-ultimate-guide-to-svg/">Ultimate Guide to SVG</a>: Web Designer Depot
+  <br><br>
+  <a href="https://www.w3.org/TR/SVG/animate.html">W3Schools SVG animation standards</a>
+  <br><br>
+  <a href="https://www.youtube.com/watch?v=lM7cuk5DPgc">Three Ways to Animate SVG </a> (Chris Coyer)
+  <br><br>
+  <a href="https://css-tricks.com/guide-svg-animations-smil/">Guide to SVG Animation: SMIL </a>
+	<br><br>
+  <a href="https://www.youtube.com/watch?v=S6P_N2JWSrc&list=PLQWB7UtRMkHO1zdpfNCKG6HI4OsZtEiLn">SVG animation: astronaut</a> (Chris Gannon)
+    <br><br>
+  <a href="https://ihatetomatoes.net/create-custom-preloading-screen/">Animating Loading Screens</a> (Petr Tichy)
+  <br><br>
+  <a href="https://ihatetomatoes.net/a-simple-one-page-template-with-a-preloading-screen/">Loading Screen with JavaScript Library imagesLoaded</a> (Petr Tichy)
+
+</div></p>
+  </div>
+
+</body>
+<footer>
+  <p>&copy;2016 Alex McGrath.
+Posted on November 29, 2016.
+Modified on [12/03/16]
+</p>
+</footer>
+
+</html>

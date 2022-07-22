@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- this is a demo form for input from an end-user.
+	created:  Aug 18, 2016 -GB for LIS488 -->
+	<!-- based on http://www.w3schools.com/html/html_forms.asp -->
+	<!-- you're welcome to make the form prettier or make it conform to your
+	design - just make sure the form works. -->
+
+	<style>
+
+		body {
+			background-color: #2c2c2c;
+			width: 100%;
+			height: 100%;
+			padding-top: 2%;
+			padding-left: 2%;
+		}
+
+		#welcome {
+			font-family: sans-serif;
+			font-size: 230%;
+			letter-spacing: 3px;
+			color: #eeeeee;
+		}
+
+		blockquote {
+			font-family: sans-serif;
+			font-size: 120%;
+			color: #e3e3e3;
+		}
+
+		#forms {
+			width: 85%;
+			font-family: sans-serif;
+			color: #000000;
+			font-size: 90%;
+			background-color: #bbbbbb;
+			padding: .8%;
+			opacity: 90%;
+		}
+
+		footer {
+			font-family: sans-serif;
+			color: #9b9b9b;
+			font-size: 70%;
+			padding-top: 11%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<p id="welcome">welcome</p>
+
+	<blockquote>This is a demo of c/s database communication. Please input information.
+	</blockquote>
+<div id="forms">
+	<form name="demoform" id="demoform" method="post" action="demoform.php"
+		target="_blank" accept-charset="UTF-8"
+		enctype="application/x-www-form-urlencoded" autocomplete="off">
+
+		<fieldset width="80%">
+			<legend>Enroll in our program:</legend>
+			<p>
+			<input type="radio" name="salutation" value="Mr"> Mr.
+			<input type="radio" name="salutation" value="Mrs"> Mrs.
+			<input type="radio" name="salutation" value="Dr"> Dr.
+			<input type="radio" name="salutation" value="Cpt"> Cpt.
+
+			<input type="text" name="username" size="30"
+				placeholder="Jon Don" />
+			</p>
+
+			<p>
+			<input type="email" name="email" placeholder="jon.don@simmons.edu" />
+			</p>
+
+			<p>
+			Program you&rsquo;re selecting:
+			<select required name="program" id="program">
+				<option value="arts">Arts</option>
+				<option value="childrens">Children&rsquo;s</option>
+				<option value="ya">Young Adult</option>
+				<option value="popular">Popular Fiction</option>
+				<option value="historical">Historical</option>
+				<option value="tech">Technology</option>
+				<option value="arts">Arts</option>
+			</select>
+			</p>
+			<p>
+			Please tell us about your interests:
+			<font size="-2">256 chars. Please do not use apostrophes or quotation marks.</font><br />
+			<textarea name="comments" maxlength="256" rows="4"></textarea>
+			</p>
+
+			<p>
+			<input type="submit" value="Submit">
+			</p>
+		</fieldset>
+
+	</form>
+</div>
+
+<footer>
+	Alex McGrath | Contact with questions.
+</footer>
+
+</body>
+</html>

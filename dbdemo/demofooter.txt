@@ -1,0 +1,6 @@
+<!-- start of demofooter.txt -->
+<hr />
+<p align="center">Alex McGrath</p>
+</body>
+</html>
+<!-- end of the demofooter.txt -->

@@ -1,0 +1,25 @@
+solarsystem {
+  background-color: #222222;
+  color: #ffffff;
+}
+planet {
+  font-family: 'Lato', sans-serif;
+  display: block;
+  float: left;
+  width: 98%;
+  padding: 1%;
+}
+
+dwarfplanet {
+  font-family: 'Lato', sans-serif;
+  display: block;
+  float: left;
+  width: 98%;
+  padding: 1%;
+}
+name {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,600" rel="stylesheet">

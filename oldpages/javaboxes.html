@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Alex McGrath">
+
+  <style>
+
+    html, body {
+      height: 100%;
+      margin-top: -2%;
+      background-color: #222;
+    }
+
+    .imagelink {
+      position: relative;
+      background-color: #222;
+      width: 50%;
+      height: 49.5%;
+      display: block;
+      float: left;
+    }
+
+    .infotxt {
+      position: relative;
+      width: 50%;
+      height: 49.5%;
+      float: left;
+      color: #9d9d9d;
+      font-family: 'Roboto', sans-serif;
+  		text-align: left;
+      overflow: auto;
+      background-color: #222;
+    }
+    .btmft {
+      position: relative;
+      width: 100%;
+      height: 1%;
+      float: left;
+      background-color: #222;
+      color: #6d6d6d;
+      padding-top: 0.4%;
+      padding-left: 1.1%;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .infotxt h3 {
+      letter-spacing: 2px;
+      font-size: 225%;
+      padding-top: 3%;
+      padding-left: 8%;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .infotxt p{
+      font-size: 115%;
+      line-height: 130%;
+      padding-top: 2%;
+      padding-left: 8%;
+      padding-right: 8%;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .infotxt p#devnote{
+      font-size: 85%;
+      color: #6d6d6d;
+      line-height: 110%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .imagelink a span {
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #imagelink1 {
+      background-image: url("images/dali.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #imagelink2 {
+      background-image: url("images/andromeda.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #imagelink3 {
+      background-image: url("images/forest.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .linktxt {
+      color: #ffffff;
+      position: absolute;
+      font-size: 200%;
+      font-weight: 700;
+      letter-spacing: 2px;
+      height: 50%;
+      max-height: 15%;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 8%;
+      padding-right: 5%;
+      background-color: rgba(256,256,256,.1);
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .linktxtb {
+      color: #ffffff;
+      position: absolute;
+      font-size: 200%;
+      font-weight: 700;
+      letter-spacing: 2px;
+      top: 40%;
+      font-family: 'Roboto', sans-serif;
+      overflow-y: scroll;
+    }
+
+    div.imagelink:hover {
+      cursor: hand;
+      cursor: pointer;
+      opacity: .95;
+    }
+
+
+    #footertxt {
+      color: #9d9d9d;
+      padding: 2% 0 0 2%;
+      font-family: 'Lato', sans-serif;
+    }
+
+    #linktxt1 {
+    }
+    #hiddensearch {
+      display: none;
+      color: #000000;
+    }
+
+  </style>
+  <script>
+    function todaysDate() {
+        date = new Date;
+        year = date.getFullYear();
+        month = date.getMonth();
+        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+        d = date.getDate();
+        day = date.getDay();
+        days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+        document.getElementById("linktxt1").innerHTML = result;
+        setTimeout('todaysDate();','1000');
+        return true;
+    }
+
+    (function() {
+        var cx = '006638269530684947603:soch2uwvt8w';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+
+    function showSearch() {
+        document.getElementById("hiddensearch").style.display = "block";
+      }
+
+    function imagelink4(){
+        var x = document.getElementById("imagelink3").style.backgroundImage;
+        if (x == 'url("images/forest.jpg")'){
+          document.getElementById("imagelink3").style.backgroundImage = 'url("images/spiralgalaxy.jpg")';
+        } else {
+          document.getElementById("imagelink3").style.backgroundImage = 'url("images/forest.jpg")';
+        }
+    }
+
+    function numberFunction() {
+    var x, text;
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 10 || x > 13) {
+        text = "are you a hacker trying to hack my website?";
+    } else {
+        text = "very well";
+    }
+    document.getElementById("result").innerHTML = text;
+  }
+
+  </script>
+
+  <title>planet 488</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/heroic-features.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto:400,700" rel="stylesheet">
+
+</head>
+<body>
+  <script>
+    alert ("this is my javascript sandbox. click around!")
+  </script>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">home</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="education.html">education</a>
+          </li>
+          <li>
+            <a href="career.html">career</a>
+          </li>
+          <li>
+            <a href="project.html">project</a>
+          </li>
+          <li>
+            <a href="javaboxes.html">javabox</a>
+          <li>
+						<a href="mailto:alexmcg1626@gmail.com">contact</a>
+					</li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <div class="infotxt"><br>
+    <h3>welcome</h3>
+    <p>give me a number between 10-13</p>
+    <input id="numb" style="margin-left: 8%;">
+      <button type="button" onclick="numberFunction()">Submit</button>
+      <p id="result"></p>
+  </div>
+  <div class="imagelink" id="imagelink1" onclick="todaysDate();">
+    <span><div class="linktxt" id="linktxt1">what time is it?</div></span>
+  </div>
+  <div class="imagelink" id="imagelink3" onclick="imagelink4();">
+    <span><div class="linktxt">change the picture</div></span>
+  </div>
+  <div class="imagelink" id="imagelink2" onclick="showSearch();">
+    <div class="linktxt">do a google search<span id="hiddensearch">
+      <gcse:searchbox-only></gcse:searchbox-only>
+      </span></div></div>
+
+  </div>
+
+    <div class="btmft">
+
+        <p>&copy;2016  Alex McGrath
+
+        Posted on November 06, 2016.
+        Modified on [11/10/2016]
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>
